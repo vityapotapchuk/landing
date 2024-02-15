@@ -4,27 +4,27 @@
     box-sizing: border-box;
 }
 
+.contacts-section {
+    margin: 0 auto;
+    text-align: center;
+}
 .container-contacts {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    margin: 10rem 0;
-    /* border: 1px solid #895656; */
+    margin: 6rem 0;
 }
 
 .contacts {
     width: 40%;
-    /* border: 1px solid #eee; */
     padding: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
 }
-
 .form {
     width: 40%;
     padding: 30px;
@@ -33,12 +33,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* border: 1px solid #eee; */
-
-
 }
-
-
 .contacts-item {
     display: flex;
     flex-direction: row;
@@ -46,16 +41,17 @@
     width: 90%;
     padding: 15px 0;
     gap: 10px;
-    /* border: 1px solid #eeeeee55; */
+}
+.h2-title {
+    font-size: 2rem;
+    margin: 6rem 0 2rem 0;
 
 }
 
 .contacts-item p{
     font-size: 18px;
     margin-left: 3rem;
-
 }
-
 .input {
     padding: 10px;
     margin: 10px 0;
@@ -63,9 +59,8 @@
     background: transparent;
     border: none;
     border-bottom: 2px solid #eeeeee55;
-    color: #eee;
+    color: var(--textColor);
 }
-
 textarea {
     margin: 10px 0;
     padding: 30px 10px;
@@ -73,68 +68,50 @@ textarea {
     border: none;
     border-bottom: 2px solid #eeeeee55;
     width: 100%;
-    
 }
-
 textarea:focus {
     outline: none;
     background-color: #1e1e1e;
-    color: #eee;
+    color: var(--textColor);
 }
-
 .input:focus {
     outline: none;
     background-color: #1e1e1e;
-    color: #eee;
+    color: var(--textColor);
 }
-
 .input:hover {
     color: #ffffff;
 }
-
-
 input:hover::placeholder {
     color: #ffffff;
 }
-
 textarea:hover::placeholder {
     color: #ffffff;
 }
-
 textarea::placeholder {
     font-size: 16px;
     color: #acacac;
 }
-
 input::placeholder {
     font-size: 16px;
     color: #acacac;
 }
- 
-
 .btn {
     margin: 10px 0;
     background-color: #3d3d3d;
     border-radius: 1px;
     padding: 10px 3px;
     border: none;
-    color: #000000;
+    color: var(--invertTextColor);
     width: 100%;
-      
 }
-
-
-
 .btn span {
     font-size: 20px;
     font-weight: 450;
 }
-
 .btn:hover {
     background-color: #5c5c5c;
-    
 }
-
 .fa-icon {
     font-size: 3rem;
     display: flex;
@@ -142,7 +119,6 @@ input::placeholder {
     align-items: center;
     color: #ffffff74;
 }
-
 .container h1 {
     font-size: 66px;
     background-color: #1a1a1a;
@@ -152,7 +128,6 @@ input::placeholder {
     justify-content: center;
     text-transform: uppercase;
 }
-
 .title {
     font-size: 66px;
     background-color: #1a1a1a;
@@ -163,20 +138,15 @@ input::placeholder {
     text-transform: uppercase;
 }
 
-
-
 @media screen and (max-width: 1024px) and (min-width: 200px) {
     .container-contacts {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
-
     .contacts {
         width: 90%;
-        /* border: 1px solid #eee; */
         padding: 30px;
         display: flex;
         justify-content: center;
@@ -184,12 +154,9 @@ input::placeholder {
         gap: 20px;
         align-items: center;
         margin: 50px 0;
-    
     }
-
     .form {
         width: 90%;
-        /* border: 1px solid #eee; */
         padding: 30px;
         display: flex;
         justify-content: center;
@@ -197,7 +164,6 @@ input::placeholder {
         gap: 20px;
         align-items: center;
     }
-
     .contacts-item {
         display: flex;
         flex-direction: row;
@@ -205,32 +171,30 @@ input::placeholder {
         width: 100%;
         padding: 15px 15px;
         gap: 10px;
-        
-        /* border: 1px solid #eeeeee55; */
-    
     }
-
     .contacts-item p{
         font-size: 15px;
         margin-left: 10px;
-    
     }
-
     .fa-icon {
         font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .contacts h3 {
         margin: 50px 0;
         font-size: 2rem;
     }
-
     .form h3 {
         margin: 50px 0;
         font-size: 2rem;
+    }
+
+    .h2-title {
+        font-size: 1.5rem;
+        margin: 5rem 0 1rem 0;
+
     }
     
 } 

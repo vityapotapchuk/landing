@@ -10,23 +10,18 @@ function Contacts() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_6es17kr", "template_bg3q80a", form.current, {
+    emailjs.sendForm("service_6es17kr", "template_bg3q80a", form.current, {
         publicKey: "z3pJNmbhUCFmM_qxA",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      }).then(() => {alert("FORM SUCCESS!");
+        }, (error) => {alert("FORM FAILED...", error.text);
+      });
     e.target.reset();
   };
   return (
     <div id="contacts" className="contacts-section">
-      <h3 className="title">CONTACTS</h3>
+      <h1 className="title">CONTACTS</h1>
+      <p className="h2-title">We are one-message away from the new start. <br/>
+      Let's bring your ideas to life!</p>
       <div className="container-contacts">
         <div className="contacts">
           <h3>Get in touch</h3>
@@ -41,7 +36,6 @@ function Contacts() {
             <div className="fa-icon">
               <FaInstagramSquare />
             </div>
-
             <p>huragan.production</p>
           </div>
           <div className="contacts-item">
