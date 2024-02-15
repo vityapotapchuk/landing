@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    background: #1a1a1a;
+    margin-bottom: 5rem ;
+    
+    white-space: nowrap;
+}
+.logo-slide {
+   animation: 50s slide infinite linear;
+   display: inline-block;
+
+}
+
+.logo-img { 
+    height: 50px;
+    margin: 0 50px;
+      
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

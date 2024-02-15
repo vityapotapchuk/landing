@@ -1,0 +1,61 @@
+.main {
+    height: 60vh;
+}
+
+.section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920;
+    margin: 35vh auto;
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+.section h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.5em;
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.section p {
+        font-size: 12px;
+       
+    }
+
+    .section h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .section {
+        margin-bottom: 20px;
+        display: flex;
+        align-items:first baseline;
+        /* justify-content: center; */
+        flex-direction: column;
+        width: 100%;
+        max-width: 1920;
+        margin: 35vh auto;
+        padding: 0 20px;
+        
+    }
+
+	
+}
+
