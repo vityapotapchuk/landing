@@ -10,15 +10,17 @@ function Navbar() {
   
   return (
     <div className="navbar">
-          <img className="logo-img-nav" src={logo} alt="logo" />
+        <Link to="main" spy={true} smooth={false} offset={0}>
+            <img className="logo-img-nav" src={logo} alt="logo" />
+        </Link>
         <nav className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
-          <Link to="projects" spy={true} smooth={false} offset={-100}>
+          <Link to="projects" spy={true} smooth={false} offset={0}>
             <p>Projects</p>
           </Link>
-          <Link to="about" spy={true} smooth={false} offset={100}>
+          <Link to="about" spy={true} smooth={false} offset={0}>
             <p>About</p>
           </Link>
-          <Link to="contacts" spy={true} smooth={false} offset={100}>
+          <Link to="contacts" spy={true} smooth={false} offset={0}>
             <p>Contacts</p>
           </Link>
         </nav>

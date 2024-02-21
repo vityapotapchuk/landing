@@ -1,4 +1,3 @@
-import React from 'react'
 import './App.css'
 import Navbar from './Components/Header/Navbar'
 import Main from './Components/Main/Main'
@@ -7,8 +6,7 @@ import Slider from './Components/Slider/Slider'
 import About from './Components/About/About'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
-
-
+import Services from './Components/Services/Services'
 
 
 function App() {
@@ -20,8 +18,11 @@ function App() {
             <Slider />
             <ImageGallery />
             <About />
+            <Services />
             <Contacts />
             <Footer />
+
+
 
         </div>
     )

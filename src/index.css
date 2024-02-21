@@ -2,11 +2,13 @@
 
 
 :root {
-  --mainColor: #141414;
-  --mainColorLight: rgb(42, 42, 42);
+  --mainColor: black;
+  --mainColorLight: rgb(23, 23, 23);
   --secondaryColor: #47464689;
   --textColor: #eee;
+  --secondaryTextColor: rgba(252, 165, 0, 1);
   --invertTextColor: #000;
+
 }
 
 * {

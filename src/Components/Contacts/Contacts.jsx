@@ -19,7 +19,7 @@ function Contacts() {
   };
   return (
     <div id="contacts" className="contacts-section">
-      <h1 className="title">CONTACTS</h1>
+      <h1 className="title-contacts">CONTACTS</h1>
       <p className="h2-title">We are one-message away from the new start. <br/>
       Let's bring your ideas to life!</p>
       <div className="container-contacts">
