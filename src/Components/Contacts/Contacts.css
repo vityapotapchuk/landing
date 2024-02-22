@@ -16,9 +16,8 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    padding: 5vh 0;
+    padding: 10vh 0 ;
 }
-
 .contacts {
     width: 40%;
     padding: 30px;
@@ -55,8 +54,7 @@
 }
 .h2-title {
     font-size: 2rem;
-    margin: 6rem 0 ;
-
+    margin: 6rem 3rem ;
 }
 
 .contacts-item p{
@@ -72,19 +70,6 @@
     border-bottom: 2px solid #eeeeee55;
     color: var(--textColor);
 }
-textarea {
-    margin: 10px 0;
-    padding: 30px 10px;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #eeeeee55;
-    width: 100%;
-}
-textarea:focus {
-    outline: none;
-    background-color: #1e1e1e;
-    color: var(--textColor);
-}
 .input:focus {
     outline: none;
     background-color: #1e1e1e;
@@ -95,13 +80,6 @@ textarea:focus {
 }
 input:hover::placeholder {
     color: #ffffff;
-}
-textarea:hover::placeholder {
-    color: #ffffff;
-}
-textarea::placeholder {
-    font-size: 16px;
-    color: #acacac;
 }
 input::placeholder {
     font-size: 16px;
@@ -203,10 +181,8 @@ input::placeholder {
 
     .h2-title {
         font-size: 1.5rem;
-        margin: 5rem 0 1rem 0;
-
+        margin: 5rem 2rem 1rem 2rem;
     }
-    
 } 
     
 

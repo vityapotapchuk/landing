@@ -40,7 +40,7 @@
 .gallery-card:hover .text-container {
   top: 0;
 }
-.title {
+.title-projects {
     font-size: 66px;
     background-color: #1a1a1a;
     width: 100%;
@@ -49,4 +49,19 @@
     justify-content: center;
     text-transform: uppercase;
     margin-top: 150px;
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery-container {
+
+    }
+    .gallery-card {
+
+        width: 100%;
+        overflow: hidden;
+        /*border:1px solid #eee;*/
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
 }

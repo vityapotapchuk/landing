@@ -6,7 +6,6 @@
     background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
     /*border: 1px solid #eee;*/
 }
-
 .title-services {
     font-size: 66px;
     background-color: #1a1a1a;
@@ -16,17 +15,70 @@
     justify-content: center;
     text-transform: uppercase;
 }
-
 .content-services {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 90%;
-    padding: 30px;
+    padding: 25px;
     align-items: center;
-    margin: 10vh auto;
+    margin: 6vh auto;
     /*border: 1px solid #eee;*/
 }
-
+.services-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*border: 1px solid #eee;*/
+    padding: 5rem 1rem;
+}
+.full-cycle-container {
+    width: 50%;
+    /*border: 1px solid #eee;*/
+    padding: 10px;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.any-formats-container {
+    width: 50%;
+    /*border: 1px solid #eee;*/
+    padding: 10px;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.full-cycle-container h3 {
+    font-size: 5rem;
+    margin: 4rem 0;
+    color: var(--secondaryTextColor);
+}
+.any-formats-container h3 {
+    font-size: 5rem;
+    margin: 4rem 0;
+    color: var(--secondaryTextColor);
+}
+.any-formats-container ul {
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(0.5);
+    background-color: rgba(146, 146, 146, 0.08);
+    border: 1px solid rgba(146, 146, 146, 0.28);
+    font-size: 1rem;
+}
+.full-cycle-container ul {
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(0.5);
+    background-color: rgba(146, 146, 146, 0.08);
+    border: 1px solid rgba(146, 146, 146, 0.28);
+    font-size: 1rem;
+}
 .grid-content {
     width: 90%;
     /*border: 1px solid #eee;*/
@@ -36,7 +88,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .item {
     width: 32%;
     height: 250px;
@@ -55,7 +106,6 @@
     /*border: 2px solid white;*/
     scale: 1.03;
 }
-
 .item p {
     font-size: 1.3rem;
     padding: 15px 20px;
@@ -65,7 +115,6 @@
     font-size: 4rem;
     color: var(--secondaryTextColor);
 }
-
 
 @media only screen and (max-width: 1000px) {
 
