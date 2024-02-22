@@ -109,7 +109,7 @@ function Contacts() {
         </div>
 
         <div className="form">
-          <h3>Feel free to ask</h3>
+          <h3>Feel free to ask!</h3>
           {isError && (<div>{isError}</div>)}
           {isResult ? (
             <div>
