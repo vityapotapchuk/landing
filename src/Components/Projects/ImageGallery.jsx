@@ -4,7 +4,7 @@ import images from "../../images";
 const ImageGallery = () => {
   return (
     <div id="projects" className="projects-container">
-      <h3 className="title">PROJECTS</h3>
+      <h3 className="title-projects">PROJECTS</h3>
       <div className="gallery-container">
         {images.map((image) => {
           return (
