@@ -14,7 +14,7 @@ function Navbar() {
             <img className="logo-img-nav" src={logo} alt="logo" />
         </Link>
         <nav className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
-          <Link to="projects" spy={true} smooth={false} offset={0} onClick={isMobile ? () => setMobile(!isMobile) : null}>
+          <Link to="projects" spy={true} smooth={false} offset={140} onClick={isMobile ? () => setMobile(!isMobile) : null}>
             <p>Projects</p>
           </Link>
           <Link to="about" spy={true} smooth={false} offset={0} onClick={isMobile ? () => setMobile(!isMobile) : null}>

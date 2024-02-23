@@ -1,5 +1,5 @@
 import './Main.css'
-import { EarthCanvas } from "../canvas";
+
 
 
 
@@ -16,9 +16,7 @@ function Main() {
                     <p><strong>THE POWER OF A STORY </strong> IS DETERMINED BY HOW MANY PEOPLE BELIEVE IT</p>
                     <p>WE CREATE UNIQUE STORIES</p>
                 </div>
-                <div className="animate">
-                    <EarthCanvas />
-                </div>
+
             </div>
 
         </>

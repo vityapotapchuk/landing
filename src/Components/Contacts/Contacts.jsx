@@ -5,6 +5,10 @@ import {useEffect, useState} from "react";
 
 function Contacts() {
 
+  const BOT_TOKEN = '6850361739:AAFxuAKiZJY4sMK6bI9PGu_z09lZQ2RRNgI';
+  const API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+  const TELEGRAM_CHAT_ID = '@HRGN_group';
+
   const [isLoading, setLoading] = useState(false)
   const [inputs] = useState([
     {
@@ -23,50 +27,48 @@ function Contacts() {
       type:"phone",
       id: "phone",
       placeholder:"Enter your phone",
-      required:true,
+      required:false,
     },
   ])
   const [isResult, setResult] = useState(null)
   const [isError, setError] = useState(null)
-
   const [form, setForm] = useState({name: null, email: null, phone: null})
+  const timeString = new Date().toLocaleString();
 
   useEffect(() => {
     console.log(form);
   }, [form]);
 
-  // function validName(name){
-  //   if(name.length > 3) {
-  //     setError(null)
-  //   } else {
-  //     setError("No valid name length")
-  //   }
-  // }
 
   const handleStateForm = (e, typeForm) => setForm({
-    name: typeForm === "name" ? e.target.value: form.name,
+    name: typeForm === "name" ? e.target.value : form.name,
     email: typeForm === "email" ? e.target.value : form.email,
     phone: typeForm === "phone" ? e.target.value : form.phone,
   })
 
   const sendEmail = async (e) => {
     e.preventDefault();
+
+    const text = `🚀Hey, you have new message!🚀\n👤name: ${form.name}!\n📨email: ${form.email}\n📱phone: ${form.phone}\nCreated on: ${timeString}`;
+
     try {
       setLoading(true)
 
-      const result = await fetch("https://test.api.stels.app/media/request", {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
+      const result = await fetch(API, {
         method: "POST",
-        body: JSON.stringify(form)
-
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          text,
+          chat_id: TELEGRAM_CHAT_ID,
+        })
       })
 
       const json = await result.json();
 
       setResult(json)
+      console.log(json)
       setLoading(false)
     } catch (e) {
       console.log(e);
@@ -113,7 +115,7 @@ function Contacts() {
           {isError && (<div>{isError}</div>)}
           {isResult ? (
             <div>
-              <h1>Thank you {isResult.data.name}</h1>
+              <h1>Thank you {form.name}</h1>
             </div>
           ) : (
             <form onSubmit={sendEmail}>
@@ -127,7 +129,7 @@ function Contacts() {
                   required={inp.required}
                 />
               ))}
-              <button className="btn" type="">
+              <button className="btn" type="submit" >
                 <span>{isLoading ? "Sending..." : "Send message"}</span>
               </button>
             </form>
